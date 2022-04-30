@@ -42,7 +42,7 @@ foreach ($User in $ADUsers)
 		-PostalCode $user_zip `
 		-Department $user_dept `
 		-OtherAttributes @{Proxyaddresses="SMTP:" + $user_email} `
-		-Path "OU=Users,OU=THE_FULL,DC=OU_PATH,DC=OUT_PATHHERE,DC=xyz" `
+		-Path "OU=Users,OU=THE_FULL,DC=OU_PATH,DC=OU_PATHHERE,DC=xyz" `
 		-Enabled $True
 }
 
